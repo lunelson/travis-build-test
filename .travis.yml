@@ -1,24 +1,22 @@
 language: node_js
 node_js:
   - "9"
-env:
-  - CXX=g++-4.8
 install:
   - npm i
 script:
   - npm run build
 cache:
-  directories:
-    - node_modules
+  # directories:
+  #   - node_modules
 notifications:
   # email: false
 deploy:
+  repo: lunelson/travis-build-test
   provider: pages
   skip-cleanup: true
   local_dir: out
-  github-token: $GITHUB_TOKEN
-  repo: lunelson/travis-build-test
+  github-token: $GH_TOKEN
   keep-history: true
-  target-branch: master
+  # target-branch: gh-pages
   on:
     branch: master
