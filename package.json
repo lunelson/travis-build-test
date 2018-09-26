@@ -5,13 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "penny serve src",
-    "build": "penny build src out"
+    "start": "penny serve src",
+    "build": "penny build src out",
+    "links": "npm link @lunelson/penny @lunelson/homework"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lunelson/penny": "^1.0.0"
+    "@lunelson/homework": "github:lunelson/homework#next",
+    "@lunelson/penny": "github:lunelson/penny#next",
+    "@lunelson/sass-calc": "^0.9.2",
+    "@lunelson/sass-maps-plus": "^0.9.0",
+    "@lunelson/sass-throw": "^1.0.2",
+    "@lunelson/sass-u": "^0.9.2"
   }
 }

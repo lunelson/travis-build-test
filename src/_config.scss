@@ -1,0 +1,163 @@
+@import '@lunelson/sass-calc/index';
+@import '@lunelson/sass-throw/index';
+@import '@lunelson/sass-maps-plus/index';
+@import '@lunelson/sass-u/index';
+@import '@lunelson/homework/index';
+
+@font-face {
+  font-family: "Neutral";
+  font-display: auto;
+  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001251-e0b371350f356247570e817d161a8bcb.woff2") format("woff2"),
+       url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001251-e0b371350f356247570e817d161a8bcb.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+  font-family: "Neutral";
+  font-display: auto;
+  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001253-dc18c8e5777b1789a0ab97b2d6b3c789.woff2") format("woff2"),
+       url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001253-dc18c8e5777b1789a0ab97b2d6b3c789.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+  font-family: "Neutral";
+  font-display: auto;
+  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001255-1500caa81df3d54ff166ed007576deba.woff2") format("woff2"),
+       url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001255-1500caa81df3d54ff166ed007576deba.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+
+$root: (
+  grid-columns: 4,
+  inner-x: 10px,
+  inner-y: 10px,
+  outer-top: 20px,
+  outer-bottom: 20px,
+  outer-right: 10px,
+  outer-left: 10px,
+
+  // changed to inner-mods to support new homework revision
+  inner-mods: (
+    xxs: 10px,
+    xs: 20px,
+    s: 30px,
+    m: 40px,
+    ml: 50px,
+    l: 70px,
+    xl: 100px,
+    xxl: 150px,
+  ),
+  font-mods: (
+    sans: (
+      m3: 10 12,
+      m2: 12 20,
+      m1: 16 25,
+
+      h6: 20 30,
+      h5: 20 30,
+      h4: 20 30,
+      h3: 25 35,
+      h2b: 40 40,
+      h2: 40 50,
+      h1: 80 80,
+
+      t4: 16 25,
+      // t3: 18 30,
+      t2: 18 30,
+      t1: 20 30,
+
+      s1: 40 45,
+    ),
+    mono: (
+      i2: 14 25,
+      i1: 14 25,
+    ),
+  ),
+);
+
+$media: (
+  s: (
+    breakpoint: 32em,
+    outer-right: 3rem,
+    outer-left: 3rem,
+    inner-x: 20px,
+    font-mods: (
+      sans: (
+        m3: 12 20,
+      ),
+      mono: (
+      ),
+    ),
+  ),
+  m: (
+    breakpoint: 48em,
+    grid-columns: 14,
+    outer-right: 5rem,
+    outer-left: 5rem,
+    inner-x: 30px,
+  ),
+  l: (
+    breakpoint: 64em,
+    // grid-columns: 14,
+    outer-right: 8rem,
+    outer-left: 8rem,
+    inner-x: 40px,
+    font-mods: (
+      sans: (
+        h5: 22 30,
+        h4: 30 40,
+        h3: 30 40,
+        h2b: 45 45,
+        h2: 45 55,
+        h1: 100 100,
+
+        t1: 22 35,
+        s1: 50 55,
+      ),
+      mono: (
+        i2: 20 25,
+      ),
+    ),
+  ),
+  xl: (
+    breakpoint: 96em,
+    // outer-right: 160px,
+    // outer-left: 160px,
+    // inner-x: 50px,
+  ),
+);
+
+$fonts: (
+  sans: (
+    family: ('Neutral', sans-serif),
+    spacing-max: 1,
+    spacing-end: 32,
+    trim-x: 0,
+    trim-capline: 0,
+    trim-baseline: 0,
+  ),
+  // mono: (
+  //   family: ('Maison Mono', monaco, consolas, monospace),
+  //   spacing-max: 0.75,
+  //   spacing-end: 16,
+  //   trim-x: 0,
+  //   trim-capline: 0,
+  //   trim-baseline: 0,
+  // )
+);
+
+$colors: (
+  haze: #F7F8F6, // outer x boundary
+  twilight: #F5F5EB, // gradient
+  satin: #E6E6D7, // trennlinie
+  // westar: #DCDCD2, // trennlinie alt
+  gumleaf: #AFC8B9, // allgemein
+  limette: #D2DC3C, // natur
+  purple: #918CC3, // gemeinschaft
+  sage: #9BA578, // krise
+  rust: #D7733C, // körper
+  lite: #fff, // white
+  dark: #000 // black
+);
