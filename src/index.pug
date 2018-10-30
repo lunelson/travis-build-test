@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Lu Nelson
-    link(href="lib.css", rel="stylesheet")
-    link(href="app.css", rel="stylesheet")
+extends /_layout
+block body
 
-  body
-    .wrap-last: .frame.py-l
-      .flow
-        .span-3
-          include logo.svg
-        .span: h1 this was built by travis
-        .span: p Lu Nelson, Creative Developer
-
-    script(src="app.js")
+  .wrap-last: .frame.py-l
+    .flow
+      .span-3
+        include logo.svg
+      .span-2
+        include logo-alt.svg
+      .span
+        h1 this was built by travis
+      .span
+        p Lu Nelson, Creative Developer

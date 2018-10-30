@@ -4,30 +4,68 @@
 @import '@lunelson/sass-u/index';
 @import '@lunelson/homework/index';
 
+/*
+
+GT-America-Standard-Bold.woff
+GT-America-Standard-Bold.woff2
+GT-America-Standard-Regular-Italic.woff
+GT-America-Standard-Regular-Italic.woff2
+GT-America-Standard-Regular.woff
+GT-America-Standard-Regular.woff2
+
+*/
+
 @font-face {
-  font-family: "Neutral";
+  font-family: 'GT America Standard';
   font-display: auto;
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001251-e0b371350f356247570e817d161a8bcb.woff2") format("woff2"),
-       url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001251-e0b371350f356247570e817d161a8bcb.woff") format("woff");
-	font-style: normal;
-	font-weight: 400;
-}
-@font-face {
-  font-family: "Neutral";
-  font-display: auto;
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001253-dc18c8e5777b1789a0ab97b2d6b3c789.woff2") format("woff2"),
-       url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001253-dc18c8e5777b1789a0ab97b2d6b3c789.woff") format("woff");
-	font-style: normal;
-	font-weight: 500;
-}
-@font-face {
-  font-family: "Neutral";
-  font-display: auto;
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001255-1500caa81df3d54ff166ed007576deba.woff2") format("woff2"),
-       url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001255-1500caa81df3d54ff166ed007576deba.woff") format("woff");
+  src: url('/assets/fonts/GT-America-Standard-Bold.woff2') format('woff2'),
+       url('/assets/fonts/GT-America-Standard-Bold.woff') format('woff');
 	font-style: normal;
 	font-weight: 700;
 }
+
+@font-face {
+  font-family: 'GT America Standard';
+  font-display: auto;
+  src: url('/assets/fonts/GT-America-Standard-Regular-Italic.woff2') format('woff2'),
+       url('/assets/fonts/GT-America-Standard-Regular-Italic.woff') format('woff');
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GT America Standard';
+  font-display: auto;
+  src: url('/assets/fonts/GT-America-Standard-Regular.woff2') format('woff2'),
+       url('/assets/fonts/GT-America-Standard-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
+
+// @font-face {
+//   font-family: "Neutral";
+//   font-display: auto;
+//   src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001251-e0b371350f356247570e817d161a8bcb.woff2") format("woff2"),
+//        url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001251-e0b371350f356247570e817d161a8bcb.woff") format("woff");
+// 	font-style: normal;
+// 	font-weight: 400;
+// }
+// @font-face {
+//   font-family: "Neutral";
+//   font-display: auto;
+//   src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001253-dc18c8e5777b1789a0ab97b2d6b3c789.woff2") format("woff2"),
+//        url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001253-dc18c8e5777b1789a0ab97b2d6b3c789.woff") format("woff");
+// 	font-style: normal;
+// 	font-weight: 500;
+// }
+// @font-face {
+//   font-family: "Neutral";
+//   font-display: auto;
+//   src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001255-1500caa81df3d54ff166ed007576deba.woff2") format("woff2"),
+//        url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-024085-009332-001255-1500caa81df3d54ff166ed007576deba.woff") format("woff");
+// 	font-style: normal;
+// 	font-weight: 700;
+// }
 
 $root: (
   grid-columns: 4,
@@ -131,7 +169,7 @@ $media: (
 
 $fonts: (
   sans: (
-    family: ('Neutral', sans-serif),
+    family: ('GT America Standard', sans-serif),
     spacing-max: 1,
     spacing-end: 32,
     trim-x: 0,
